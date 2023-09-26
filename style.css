@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1440px;
+  height: 800px;
+  font-size: 14px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+.card {
+  width: 700px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  border-radius: 15px;
+  gap: 0;
+  background-color: white;
+}
+
+.card img {
+  width: 350px;
+  height: 600px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  overflow: hidden;
+}
+.right {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 2fr 2fr;
+}
+.perfume {
+  font-family: Fraunces, serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: gray;
+  display: grid;
+  align-items: center;
+}
+
+.right h2 {
+  font-size: 40px;
+  font-family: Fraunces, serif;
+  padding-right: 60px;
+}
+
+.content {
+  padding-right: 25px;
+  font-size: 18px;
+  font-family: montserrat, serif;
+  line-height: 1.4;
+}
+.price {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+}
+
+.current-price {
+  display: inline-block;
+  font-size: 42px;
+  font-family: montserrat, serif;
+  font-weight: bolder;
+  color: hsl(158, 36%, 37%);
+  align-items: center;
+}
+.original-price {
+  display: inline-block;
+  font-size: 18px;
+  font-family: montserrat, serif;
+  padding-left: 20px;
+  align-items: center;
+}
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+}
+button {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: hsl(158, 35%, 20%);
+  color: white;
+  font-size: 22px;
+  font-family: montserrat, serif;
+  border-radius: 12px;
+  transition: 0.15s;
+}
+.add-to-cart-btn button img {
+  width: 20px;
+  height: auto;
+  margin: 0 5px;
+}
+button:hover {
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: hsl(158, 35%, 20%);
+  background-color: white;
+  border: 2px solid hsl(158, 35%, 20%);
+  font-size: 22px;
+  font-family: montserrat, serif;
+  border-radius: 12px;
+}
